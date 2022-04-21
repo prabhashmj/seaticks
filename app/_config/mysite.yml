@@ -29,3 +29,24 @@ SilverStripe\Core\Injector\Injector:
       ResolutionFileIDHelpers:
         - '%$SilverStripe\Assets\FilenameParsing\HashFileIDHelper'
       VersionedStage: Stage
+  SilverStripe\Security\MemberAuthenticator\LoginHandler:
+    class: CustomLoginHandler
+SilverStripe\Security\Member:
+  extensions:
+    - MemberExtension
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SiteConfigExtension
+SilverStripe\AssetAdmin\Controller\AssetAdmin:
+  extensions:
+    - AssetAdminExtension
+SilverStripe\Assets\File:
+  extensions:
+    - FileExtension
+SilverStripe\Assets\Image:
+  extensions:
+    - ImageExtension
+SilverStripe\Security\Group:
+  extensions:
+    - VendorGroup

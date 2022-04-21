@@ -1,0 +1,32 @@
+---
+Name: payment
+---
+SilverStripe\Omnipay\Model\Payment:
+  allowed_gateways:
+    - 'PayPal_Express'
+  curruncy: 'USD'
+  extensions:
+    - PaymentExtension
+
+SilverStripe\Omnipay\GatewayInfo:
+  PayPal_Express:
+    use_authorize: true
+    token_key: 'token'
+    parameters:
+      username: 'sb-vedwu2365441_api1.business.example.com'
+      password: '7DDNREPNB4JPT4AR'
+      signature: 'A7Z.oh6xI0k.ZsBVg1eNAMQAqP.jAnszwY8k0XOUGtEIYplzGQJ5P1YD'
+      testMode: true
+
+---
+Only:
+  environment: 'live'
+---
+# Supply different credentials for "live" environment.
+SilverStripe\Omnipay\GatewayInfo:
+  PayPal_Express:
+    parameters:
+      username: 'sb-vedwu2365441_api1.business.example.com'
+      password: '7DDNREPNB4JPT4AR'
+      signature: 'A7Z.oh6xI0k.ZsBVg1eNAMQAqP.jAnszwY8k0XOUGtEIYplzGQJ5P1YD'
+      testMode: true

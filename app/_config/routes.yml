@@ -1,0 +1,14 @@
+---
+Name: approutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    'getplan//$Action/$ID/$Name': 'CanvasPageController'
+    'getsphere//$Action/$ID/$Name': 'CanvasPageController'
+    'booking//$Action/$ID/$Name': 'PageController'
+    'sphere//$Action/$ID/$Name': 'VirtualImagePageController'
+    'signup//$Action/$ID/$Name': 'PricingPageController'
+#    'homePageEvents//$Action/$ID/$Name': 'AllEventsPageController'
