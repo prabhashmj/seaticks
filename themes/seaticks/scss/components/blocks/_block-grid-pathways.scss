@@ -1,0 +1,51 @@
+.block-pathways .wrapper {
+    position: relative;
+    padding: 15px 0 0;
+}
+
+.block-pathways--is-featured .wrapper {
+    padding: 0 0 20px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        max-width: 620px;
+        height: 1px;
+        background: $black;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:before {
+        top: 0;
+        display: none;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+}
+
+.block-pathways--is-featured a.button {
+    margin-top: 25px;
+}
+
+@include breakpoint(large) {
+    .block-pathways--is-featured .wrapper {
+        padding: 90px 0 45px;
+
+        &:before {
+            top: 0;
+            display: block;
+        }
+    }
+}
+
+@include breakpoint(xxlarge) {
+    .block-pathways--is-featured .wrapper {
+        justify-content: space-between;
+    }
+}

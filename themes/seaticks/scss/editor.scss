@@ -1,0 +1,40 @@
+/**
+ * What is this SCSS for?
+ *
+ * Any CSS that isn't critical to the intial load of your website will be
+ * deferred until after your web page has fully finished loading.
+ *
+ * @credit
+ * https://github.com/chris-pearce/css-guidelines
+ */
+
+@import url("https://use.typekit.net/sep4kdy.css");
+
+@import 'settings';
+@import 'foundation';
+
+@include foundation-button;
+@include foundation-global-styles;
+@include foundation-typography;
+
+
+@import 'shared/mixins';
+@import 'shared/default';
+@import 'shared/fonts';
+@import 'shared/helpers';
+@import 'shared/containers';
+@import 'shared/typography';
+
+
+body.mce-content-body {
+    padding: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+//@import 'shared/typography';
+
+//body.typography {
+//    background: #fff;
+//    font-size: 110%;
+//}

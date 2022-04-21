@@ -1,0 +1,23 @@
+.block-html-content {
+    .block-title {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 30px;
+
+        @extend .Brown-Bold-web;
+    }
+
+    @include breakpoint(medium) {
+        .block-title {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @include breakpoint(large) {
+        .block-title {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}

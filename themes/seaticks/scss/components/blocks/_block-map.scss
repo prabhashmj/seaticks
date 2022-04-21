@@ -1,0 +1,67 @@
+.block-map {
+    background-color: $medium-gray;
+}
+
+.block-map .grid-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.block-map__map {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 100%;
+        padding-top: 90.7096%;
+        display: block;
+    }
+}
+
+.block-map .image {
+    @extend .absolute-100;
+
+    @include bg-image;
+
+    background-size: contain;
+}
+
+.block-map .align {
+    width: 100%;
+    max-width: 615px;
+    padding: 60px 35px;
+}
+
+.block-map .title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @extend .Brown-Bold-web;
+}
+
+@include breakpoint(large) {
+    .block-map .align {
+        padding: 90px 0 65px 100%/12*1;
+    }
+
+    .block-map .title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .block-map .grid-container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .block-map .image {
+        width: calc(100% + 35px);
+        left: -35px;
+    }
+}
+
+@include breakpoint(xlarge) {
+    .block-map .align {
+        padding-left: 100%/12*1.5;
+    }
+}

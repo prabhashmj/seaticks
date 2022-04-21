@@ -1,0 +1,72 @@
+.data-table {
+    border-collapse: collapse;
+
+    @include breakpoint(medium down) {
+        tbody,
+        tfoot,
+        thead {
+            border: none;
+        }
+
+        tbody tr {
+            border: 1px solid $medium-gray;
+            border-bottom: 4px solid $primary-color !important;
+        }
+
+        tbody tr td {
+            border-bottom: 1px solid $light-gray;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+        }
+
+        tr {
+            display: block;
+        }
+
+        tr + tr {
+            margin-top: 1.5rem;
+        } /* Get table cells to act like rows */
+
+        td {
+            border: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 50%;
+            position: relative;
+        }
+
+        td:before {
+            content: attr(data-label);
+            display: inline-block;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-left: -100%;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        td:after {
+            content: '';
+            position: absolute;
+            width: 45%;
+            height: 95%;
+            left: 1px;
+            top: 1px;
+            z-index: 0;
+        }
+    }
+}
+
+.data-table.unstriped tbody {
+    background-color: transparent;
+}
+
+.table-scroll table {
+    min-width: 800px;
+}

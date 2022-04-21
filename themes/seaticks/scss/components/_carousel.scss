@@ -1,0 +1,124 @@
+// Tiny Slider JS default styles
+.tns-slider {
+    position: relative;
+}
+
+.tns-slider .item figure {
+    margin-bottom: 0.8rem;
+}
+
+// Carousel Dots
+.tns-nav {
+    margin: 1rem auto 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+.tns-outer {
+    position: relative;
+}
+
+.tns-nav button {
+    line-height: 0;
+    outline: none;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+    border-radius: 50em;
+    margin: 0.2rem;
+    background-color: $border-light-gray;
+
+    @include transition;
+
+    &.tns-nav-active,
+    &:hover {
+        background: $orange;
+    }
+}
+
+.tns-controls svg {
+    stroke: $primary-color;
+}
+
+.tns-controls svg g {
+    stroke-width: 9;
+}
+
+.tns-controls button[data-controls="next"],
+.tns-controls button[data-controls="prev"] {
+    @include vertical-center;
+
+    //top: 45%;
+    top: 200px;
+    background: $white !important;
+    padding: 0.45rem 0.9rem 0.2rem !important;
+    border-radius: 50em;
+    height: 46px;
+    width: 46px;
+    margin-bottom: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+    &.disabled {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @include breakpoint(768px) {
+        top: 220px;
+    }
+
+    @include breakpoint(large up) {
+        top: 300px;
+    }
+
+    @include breakpoint(xlarge up) {
+        top: 230px;
+    }
+}
+
+.block-image-carousel .tns-controls button[data-controls="next"],
+.block-image-carousel .tns-controls button[data-controls="prev"] {
+    top: 200px;
+
+    @include breakpoint(large up) {
+        top: 300px;
+    }
+}
+
+.block-image-carousel.narrow .tns-controls button[data-controls="next"],
+.block-image-carousel.narrow .tns-controls button[data-controls="prev"] {
+    @include breakpoint(large up) {
+        top: 175px;
+    }
+}
+
+.block-image-carousel.wide .tns-controls button[data-controls="next"],
+.block-image-carousel.wide .tns-controls button[data-controls="prev"] {
+    @include breakpoint(large up) {
+        top: 350px;
+    }
+}
+
+.block-image-carousel.full .tns-controls button[data-controls="next"],
+.block-image-carousel.full .tns-controls button[data-controls="prev"] {
+    @include breakpoint(large up) {
+        top: 400px;
+    }
+}
+
+// Accessibility: Focus Outline
+.tns-controls button[data-controls="next"]:focus,
+.tns-controls button[data-controls="prev"]:focus,
+.tns-nav button:focus,
+.tns-controls:focus {
+    outline: $secondary-color auto 5px;
+}
+
+.tns-controls button[data-controls="prev"] {
+    left: 1.5rem;
+}
+
+.tns-controls button[data-controls="next"] {
+    right: 1.5rem;
+}

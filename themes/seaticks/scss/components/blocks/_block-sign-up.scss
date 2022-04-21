@@ -1,0 +1,28 @@
+.block-sign-up {
+    position: relative;
+    overflow: hidden;
+    padding: 45px 0 65px;
+    margin-bottom: 0 !important;
+}
+
+.block-sign-up .title {
+    margin-bottom: 35px;
+}
+
+.block-sign-up__bg {
+    z-index: 0;
+
+    @extend .absolute-100;
+
+    @include bg-image;
+}
+
+.block-sign-up__content {
+    position: relative;
+}
+
+@include breakpoint(large) {
+    .block-sign-up {
+        padding: 55px 0 60px;
+    }
+}

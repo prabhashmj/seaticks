@@ -1,0 +1,175 @@
+.accordion .accordion-title {
+    border-left: 0;
+    border-right: 0;
+    border-color: $border-light-gray;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: bold;
+    padding: 30px 25px 30px 0;
+}
+
+.accordion .accordion-title:hover,
+.accordion .accordion-title:focus {
+    background: transparent;
+    background: $tabs-hover;
+}
+
+.accordion .accordion-title:before {
+    content: '';
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/png/down-arrow-dropdown.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.accordion .accordion-content {
+    border: 0;
+    padding: 0 0 30px;
+}
+
+.accordion .accordion-content .info p {
+    font-size: 14px;
+}
+
+.accordion .accordion-content .info p:last-child {
+    margin-bottom: 0;
+}
+
+.accordion .accordion-content .link {
+    font-size: 15px;
+    color: $black;
+    text-decoration: underline;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 0;
+    height: auto;
+    background: none;
+    text-transform: inherit;
+    font-weight: 400;
+}
+
+.accordion .accordion-content .button,
+.accordion .accordion-content .hollow {
+    margin-top: 25px;
+}
+
+.accordion .accordion-content .link:hover {
+    color: $primary-color;
+}
+
+.is-active > .accordion-title:before {
+    background-image: url("../images/png/up-arrow-dropdown.png");
+}
+
+.accordion-item:last-child {
+    border-bottom: 1px solid $border-light-gray;
+}
+
+.accordion-item:last-child .accordion-title {
+    border-bottom: 0;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.title-wrapper .title {
+    margin-bottom: 20px;
+}
+
+//------------------------------ map-block ------------------------------
+
+.block-accordion--map-block .accordion {
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.block-accordion--map-block .accordion .accordion-title {
+    padding: 20px 25px 20px 0;
+}
+
+.block-accordion--map-block .accordion .accordion-content {
+    background: transparent;
+}
+
+.block-accordion--map-block .accordion .accordion-content .title {
+    margin-bottom: 25px;
+}
+
+.block-accordion--map-block .accordion .accordion-content ul {
+    margin-bottom: 0;
+}
+
+.block-accordion--map-block .accordion .accordion-content ul li {
+    margin-bottom: 25px;
+}
+
+.block-accordion--map-block .accordion .accordion-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+//------------------------------ tabs ------------------------------
+.tabs,
+.tabs-content {
+    border: 0;
+}
+
+.tabs-panel {
+    padding: 20px 0;
+}
+
+.tabs .tabs-title a {
+    border: 1px solid $border-light-gray;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: bold;
+}
+
+.tabs .tabs-title a:hover,
+.tabs .tabs-title a:focus {
+    background: $tabs-hover;
+}
+
+@include breakpoint(medium) {
+    .title-wrapper {
+        flex-direction: row;
+    }
+
+    .title-wrapper .title {
+        margin-bottom: 0;
+    }
+}
+
+@include breakpoint(large) {
+    .accordion .accordion-title {
+        font-size: 20px;
+    }
+
+    .accordion .accordion-content {
+        padding: 25px 0 35px;
+    }
+
+    .accordion .accordion-content .info p,
+    .accordion .accordion-content .link {
+        font-size: 15px;
+    }
+
+    .block-accordion--map-block .accordion .accordion-title {
+        font-size: 15px;
+    }
+
+    .block-accordion--map-block .accordion .accordion-content ul li {
+        font-size: 15px;
+    }
+}

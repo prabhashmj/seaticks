@@ -1,0 +1,7 @@
+.block-icon {
+    @include breakpoint(xxlarge) {
+        .wrapper {
+            margin: 0 -30px;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.block-contact-details .title {
+    margin-bottom: 25px;
+}
+
+.block-contact-details .info p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.block-contact-details__map {
+    position: relative;
+    margin: 40px 0;
+
+    &:before {
+        content: '';
+        width: 100%;
+        padding-top: 52.33%;
+        display: block;
+    }
+}
+
+.block-contact-details .map {
+    @extend .absolute-100;
+}
+
+.block-contact-details__form {
+    background: $form-bg;
+    padding: 45px 0 30px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -35px;
+        width: 100vw;
+        height: 100%;
+        background: $form-bg;
+    }
+}
+
+.block-contact-details .guideline {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        width: 100%;
+        height: 40px;
+        background: $form-bg;
+        display: block;
+        z-index: 1;
+    }
+}
+
+.block-contact-details .guideline p {
+    font-size: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.block-contact-details .button-align {
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $border-light-gray;
+    margin-bottom: 25px;
+}
+
+.block-contact-details .button {
+    width: 100%;
+}
+
+.block-contact-details form {
+    position: relative;
+}
+
+.block-contact-details .form-align {
+    overflow: hidden;
+}
+
+.block-contact-details .clickdform {
+    padding: 0 !important;
+}
+
+@include breakpoint(medium) {
+    .block-contact-details .button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@include breakpoint(large) {
+    .block-contact-details__map {
+        margin: 60px 0 0;
+
+        &:before {
+            padding-top: 93.705%;
+        }
+    }
+
+    .block-contact-details__form {
+        padding: 45px 35px 30px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .block-contact-details .button {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

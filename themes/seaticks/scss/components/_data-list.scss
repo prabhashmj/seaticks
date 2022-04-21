@@ -1,0 +1,44 @@
+.data-list {
+    position: relative;
+    margin: 1rem 0 1.5rem;
+    list-style: none;
+}
+
+.data-list .item {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint(medium up) {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.data-list .item:before {
+    display: none;
+}
+
+.data-list .item .item-title {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.data-list .item img {
+    margin-bottom: 0.5rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.data-list.horizontal-mode {
+    @include breakpoint(large up) {
+        columns: 2;
+    }
+}
+
+.data-list.horizontal-mode .item {
+    @include breakpoint(large up) {
+        margin-right: 1.5rem;
+        break-inside: avoid-column;
+        display: list-item;
+    }
+}

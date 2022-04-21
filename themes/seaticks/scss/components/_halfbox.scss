@@ -1,0 +1,91 @@
+.halfbox {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+
+    //@include breakpoint(large up) {
+    //    display: flex;
+    //}
+}
+
+//.halfbox .block-caption {
+//    padding: 1rem;
+//}
+//
+//.halfbox .block-caption .button {
+//    margin: 0 2px;
+//}
+//
+//.halfbox .block-wrap {
+//    @include breakpoint(large up) {
+//        position: relative;
+//        width: 50%;
+//
+//        .block-caption {
+//            @include absolute-center;
+//
+//            width: 80%;
+//        }
+//    }
+//}
+//
+//.halfbox .block-image {
+//    @include breakpoint(large up) {
+//        width: 50%;
+//    }
+//}
+//
+//.halfbox .block-image img {
+//    height: 300px;
+//    width: 100%;
+//    object-fit: cover;
+//    font-family: 'object-fit: cover;';
+//
+//    // Block Image scaling
+//    @include breakpoint(medium up) {
+//        height: 450px;
+//    }
+//
+//    @include breakpoint(xlarge up) {
+//        height: 500px;
+//    }
+//}
+//
+//// Size: Full Width
+//.halfbox.full {
+//    @include breakpoint(large up) {
+//        padding-left: 0;
+//        padding-right: 0;
+//    }
+//}
+//
+//.halfbox.full .block-caption {
+//    @include breakpoint(large up) {
+//        max-width: 70%;
+//    }
+//}
+//
+//.halfbox.full .block-image img {
+//    @include breakpoint(xxlarge up) {
+//        height: 600px;
+//    }
+//}
+//
+//// Size: Narrow
+//.halfbox.narrow {
+//    @include breakpoint(large up) {
+//        padding-left: 0;
+//        padding-right: 0;
+//    }
+//}
+//
+//.halfbox.narrow .block-image img {
+//    @include breakpoint(large up) {
+//        height: 450px;
+//    }
+//}
+//
+//// Variation: Caption to Left
+//.halfbox.reverse {
+//    flex-direction: row-reverse;
+//}

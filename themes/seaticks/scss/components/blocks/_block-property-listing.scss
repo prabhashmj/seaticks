@@ -1,0 +1,15 @@
+.block-property-listing.blue-highlight .carousel-card .carousel-dots .slick-dots button {
+    background: $dark-blue;
+}
+
+.block-property-listing.blue-highlight .listing-info .title-section .sub-title,
+.block-property-listing.blue-highlight .listing-info__details .info-section .price-item .price,
+.block-property-listing.blue-highlight .listing-info__details .info-section .price-item .price:before {
+    color: $dark-blue;
+}
+
+@include breakpoint(large) {
+    .block-property-listing .listing-info {
+        flex-direction: row-reverse;
+    }
+}

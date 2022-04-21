@@ -1,0 +1,136 @@
+.block-content-slider {
+    padding: 1.5rem 0;
+
+    @include breakpoint(xlarge up) {
+        padding: 2rem 0;
+    }
+}
+
+.block-content-slider .carousel {
+    display: flex;
+}
+
+.block-content-slider .carousel .item {
+    flex: 1;
+    padding: 15px !important;
+
+    @include transition;
+}
+
+.block-content-slider .carousel a.item {
+    &:hover,
+    &:focus {
+        background: rgba(191, 189, 186, 0.4) !important;
+    }
+}
+
+.block-content-slider .carousel .item figure a {
+    display: block;
+}
+
+.block-content-slider .carousel .item.tns-slide-active img {
+    width: 100%;
+}
+
+.block-content-slider .carousel .box {
+    margin-bottom: 1rem;
+    height: 100%;
+    background: #fff;
+
+    &.has-texture {
+        background: $light-gray;
+    }
+}
+
+.block-content-slider .tns-outer .tns-inner {
+    margin: 0 -15px !important;
+    overflow: hidden;
+}
+
+.block-content-slider .tns-liveregion {
+    display: none;
+}
+
+.block-content-slider .item-caption img.texture-top {
+    position: absolute;
+    top: -1.3rem;
+    max-width: 300px;
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    @include breakpoint(small down) {
+        width: 90%;
+        top: -1rem;
+    }
+}
+
+.block-content-slider .carousel a.item .item-caption {
+    position: relative;
+}
+
+.block-content-slider .carousel a.item .item-caption h3,
+.block-content-slider .carousel a.item .item-caption p {
+    color: $black;
+}
+
+.block-content-slider .carousel .item-caption {
+    padding: 20px 0;
+    position: relative;
+
+    @include breakpoint(large up) {
+        padding: 25px 0;
+    }
+}
+
+.block-content-slider .carousel .grid-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+
+    @include breakpoint(large up) {
+        font-size: 25px;
+    }
+}
+
+.block-content-slider .tns-controls button[data-controls="prev"] {
+    @include breakpoint(xxlarge up) {
+        left: -3rem;
+    }
+}
+
+.block-content-slider .link {
+    font-size: 15px;
+    color: $black;
+    text-decoration: underline;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 0;
+    height: auto;
+    background: none;
+    text-transform: inherit;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.block-content-slider .tns-controls button[data-controls="next"] {
+    @include breakpoint(xxlarge up) {
+        right: -3rem;
+    }
+}
+
+.block-content-slider.has-texture {
+    background: url(../images/body-texture.jpg);
+}
+
+.block-content-slider.has-texture-alt {
+    background: url(../images/body-texture-alt.jpg);
+}
+
+.block-content-slider .tns-controls button {
+    cursor: pointer;
+}

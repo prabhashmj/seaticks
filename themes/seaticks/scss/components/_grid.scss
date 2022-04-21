@@ -1,0 +1,93 @@
+
+.grid {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.grid .grid-item figure img {
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+// Variation: Feature
+.grid.is-feature .grid-item figure img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+
+    @include breakpoint(large up) {
+        object-fit: initial;
+        height: auto;
+    }
+}
+
+.grid.is-feature .grid-caption {
+    text-align: center;
+}
+
+.grid.is-feature .grid-caption .small,
+.grid.is-feature .grid-caption .button {
+    display: none;
+}
+
+// Variation: Gallery
+.grid.is-gallery {
+    margin-bottom: 1rem;
+}
+
+.grid.is-gallery .grid-item {
+    position: relative;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium up) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.grid.is-gallery .grid-item a {
+    color: #fff;
+}
+
+.grid.is-gallery .grid-item .grid-caption {
+    @include absolute-center;
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.grid.is-gallery .grid-item .grid-caption p {
+    margin-bottom: 0;
+}
+
+.grid.is-gallery .grid-item figure img {
+    margin-bottom: 0;
+}
+
+.grid.is-gallery .grid-item:hover .has-overlay:after {
+    opacity: 0.2;
+}
+
+.grid.is-gallery .grid-item .grid-caption a,
+.grid.is-gallery .grid-item .grid-caption p {
+    color: #fff;
+}
+
+.grid.is-gallery .grid-caption .small,
+.grid.is-gallery .grid-caption .typography {
+    display: none;
+}
+
+// Variation: Logos
+.grid.is-logos { // Optional: Logos to be centred by default
+    text-align: center;
+    justify-content: center;
+}
+
+.grid.is-logos .grid-item {
+    margin-bottom: 0.8rem;
+}
+
+// Variation: Masonry
+// .grid.is-masonry {}

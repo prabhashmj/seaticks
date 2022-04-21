@@ -1,0 +1,23 @@
+.block {
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__title .title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+
+        @extend .Brown-Bold-web;
+    }
+
+    @include breakpoint(large) {
+        &__title .title {
+            font-size: 20px;
+        }
+    }
+
+    [v-cloak] {
+        display: none;
+    }
+}

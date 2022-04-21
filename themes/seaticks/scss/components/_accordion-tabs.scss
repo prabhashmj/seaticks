@@ -1,0 +1,9 @@
+// Default title size of Foundation is too small so...
+.accordion-tabs .accordion-title {
+    font-size: $global-font-size;
+}
+
+// Default title size of Foundation is too small so...
+.accordion-tabs .tabs-title a {
+    font-size: $global-font-size;
+}

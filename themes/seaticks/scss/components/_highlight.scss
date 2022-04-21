@@ -1,0 +1,96 @@
+.highlight {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.highlight .block-caption {
+    padding: 1rem;
+
+    @include breakpoint(large up) {
+        color: #fff;
+    }
+}
+
+.highlight .block-caption .button {
+    margin: 0 2px;
+}
+
+.highlight .block-wrap {
+    @include breakpoint(large up) {
+        @include absolute-center;
+
+        padding: 0;
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+
+.highlight .block-image img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+
+    // Block Image scaling
+    @include breakpoint(medium up) {
+        height: 400px;
+    }
+
+    @include breakpoint(large up) {
+        height: 500px;
+    }
+
+    @include breakpoint(xlarge up) {
+        height: 650px;
+    }
+}
+
+// Size: Full Width
+.highlight.full {
+    @include breakpoint(large up) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Size: Narrow
+.highlight.narrow {
+    @include breakpoint(large up) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.highlight.narrow .block-image img {
+    @include breakpoint(large up) {
+        height: 500px;
+    }
+}
+
+// Caption: To Left
+.highlight.caption-center .block-caption {
+    @include breakpoint(large up) {
+        width: 60%;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+// Caption: To Left
+.highlight.caption-left .block-caption {
+    @include breakpoint(large up) {
+        width: 60%;
+        max-width: 600px;
+    }
+}
+
+// Caption: To Left
+.highlight.caption-right .block-caption {
+    @include breakpoint(large up) {
+        width: 60%;
+        max-width: 600px;
+        float: right;
+    }
+}

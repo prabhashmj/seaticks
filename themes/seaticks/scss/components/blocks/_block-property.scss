@@ -1,0 +1,46 @@
+.block-property .top-title {
+    margin-bottom: 40px;
+}
+
+.block-property .info p {
+    font-size: 14px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.block-property .carousel-item {
+    padding: 15px 15px 0;
+}
+
+.block-property .carousel-item .card {
+    display: block;
+    margin-bottom: 0;
+}
+
+.block-property .carousel-dots {
+    margin-top: 30px;
+}
+
+.block-property__content {
+    margin-bottom: 45px;
+}
+
+.block-property__carousel {
+    margin: 0 -15px;
+}
+
+@include breakpoint(large) {
+    .block-property .top-title {
+        margin-bottom: 55px;
+    }
+
+    .block-property .info p {
+        font-size: 15px;
+    }
+
+    .block-property__content {
+        margin-bottom: 55px;
+    }
+}

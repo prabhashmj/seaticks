@@ -1,0 +1,140 @@
+.block-highlight .grid-container {
+    padding: 0;
+}
+
+.block-highlight .wrapper {
+    position: relative;
+}
+
+.block-highlight__bg {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 100%;
+        padding-top: 47.61%;
+        display: block;
+    }
+}
+
+.block-highlight .image {
+    @extend .absolute-100;
+
+    @include bg-image;
+}
+
+.block-highlight .title {
+    margin-bottom: 25px;
+}
+
+.block-highlight .info {
+    margin-bottom: 30px;
+}
+
+.block-highlight .info p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.block-highlight__content {
+    position: relative;
+    padding: 40px 35px 35px;
+}
+
+.block-highlight.caption-center {
+    .block-highlight__content {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+.block-highlight.caption-right {
+    .block-highlight__content {
+        text-align: right;
+        align-items: flex-end;
+    }
+}
+
+@include breakpoint(480px) {
+    .block-highlight .button-group {
+        justify-content: flex-start;
+    }
+
+    .block-highlight.caption-center .button-group {
+        justify-content: center;
+    }
+}
+
+@include breakpoint(medium) {
+    .block-highlight.caption-center .title {
+        font-size: 35px;
+    }
+}
+
+@include breakpoint(large) {
+    .block-highlight .grid-container {
+        padding: 0 35px;
+    }
+
+    .block-highlight .wrapper {
+        background: $black;
+    }
+
+    .block-highlight__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.74;
+    }
+
+    .block-highlight .title {
+        color: $white;
+        margin-bottom: 40px;
+    }
+
+    .block-highlight .info {
+        margin-bottom: 60px;
+    }
+
+    .block-highlight .info p {
+        color: $white;
+    }
+
+    .block-highlight__content {
+        padding: 100px 8.33% 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block-highlight.caption-center .block-highlight__content {
+        min-height: 450px;
+    }
+
+    .block-highlight.caption-center .title {
+        margin-bottom: 30px;
+        font-size: 38px;
+    }
+
+    .block-highlight.caption-center .button {
+        margin: 0 15px;
+    }
+
+    .block-highlight .button-group .hollow {
+        background: $white;
+        color: $black;
+        border-color: $white;
+
+        &:hover {
+            background: $button-hover-bg;
+            border-color: $button-hover-bg;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.block-call-to-action .title {
+    margin-bottom: 25px;
+}
+
+.block-call-to-action .title {
+    margin-bottom: 20px;
+}
+
+.block-call-to-action .typography {
+    margin-bottom: 30px;
+}
+
+.block-call-to-action .typography p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include breakpoint(medium) {
+    .block-call-to-action .button-group {
+        justify-content: flex-start;
+    }
+}
+
+@include breakpoint(large) {
+    .block-call-to-action .button-group {
+        justify-content: flex-end;
+    }
+
+    .block-call-to-action .typography {
+        margin-bottom: 0;
+    }
+}

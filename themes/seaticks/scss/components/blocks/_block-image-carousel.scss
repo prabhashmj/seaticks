@@ -1,0 +1,91 @@
+.block-image-carousel .item .item-caption {
+    position: relative;
+    padding: 30px 0;
+}
+
+.block-image-carousel .item .item-caption .grid-title {
+    font-size: 24px;
+
+    @include breakpoint(large up) {
+        font-size: 30px;
+    }
+}
+
+.block-image-carousel .item .item-caption .link {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.block-image-carousel .tns-outer {
+    margin-top: 30px;
+}
+
+.block-image-carousel .tns-liveregion {
+    display: none;
+}
+
+.block-image-carousel .tns-slider {
+    display: flex;
+}
+
+.block-image-carousel .tns-ovh {
+    position: relative;
+    overflow: hidden;
+}
+
+.block-image-carousel .item img.texture-top {
+    position: absolute;
+    top: -1rem;
+    width: 90%;
+    left: 0;
+
+    @include breakpoint(450px up) {
+        top: -1.6rem;
+    }
+
+    @include breakpoint(700px up) {
+        top: -2rem;
+        max-width: 600px;
+        left: 5%;
+    }
+
+    @include breakpoint(xlarge up) {
+        top: -2.6rem;
+    }
+}
+
+.block-image-carousel .item figure img {
+    @include breakpoint(large up) {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+.block-image-carousel .narrow .item figure img {
+    @include breakpoint(large up) {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+.block-image-carousel .wide .item figure img {
+    @include breakpoint(large up) {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+.block-image-carousel .full .item figure img {
+    @include breakpoint(large up) {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+}
