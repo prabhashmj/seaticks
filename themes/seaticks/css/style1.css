@@ -1,0 +1,420 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal-small{
+    max-height: 60%;
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    height: 95%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal-body {
+    padding: 2px 16px;
+    min-height: 200px;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.fixedPosition {
+    position: absolute;
+    bottom: 500px;
+    right: 70px;
+    width: 100px;
+}
+.dropdownPosition{
+    bottom: 40px;
+    left: 170px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #004882;
+}
+
+.box {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 80px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.box::before {
+    /*content: "\f13a";*/
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+.select-button{
+    margin-top: 50px;
+    margin-left: 400px;
+
+}
+
+/*CSS for payment gateway>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rows {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25s {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.col-50s {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-75s {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25s,
+.col-50s,
+.col-75s {
+    padding: 0 16px;
+}
+
+.containers {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    /*margin-bottom: 20px;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+}
+
+input[type=email] {
+    width: 100%;
+    /*margin-bottom: 20px;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+#UserForm_Form_116_EditableTextField_8cc6b {
+    width: 100%;
+    /*margin-bottom: 20px;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#priceID{
+    width: 100%;
+}
+
+.subscribe-form input {
+    border: 2px solid #E1E1E1;
+    height: 65px;
+    padding: 0 30px;
+    border-radius: 5px;
+    width: 50%;
+    color: #2E2E2E;
+}
+
+input[type=number] {
+    width: 40%;
+    /*margin-bottom: 20px;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-containers {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btns {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btns:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #082134;
+}
+
+hr {
+
+}
+
+span.prices {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .rows {
+        flex-direction: column-reverse;
+    }
+    .col-25s {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*pricingplan page>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+
+
+.navbar{
+
+    padding: 1rem;
+    height: 150px;
+}
+
+.navbar-nav{
+    padding-right: 50px;
+    margin-left: 50px;
+    font-family: "Microsoft JhengHei UI",sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #685756 !important;
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+}
+
+.crop {
+    width: 108.9%;
+    margin-left: -4.52%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 100%;
+    height: 400px;
+    /*margin: -100px 0 0 0px;*/
+
+}
+
+
+.cropHomepageImage {
+    width: 100%;
+    /*margin-left: -4.52%;*/
+    min-height: 200px;
+    max-height: 201px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.cropHomepageImage img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 201px;
+    /*margin: -100px 0 0 0px;*/
+
+}
+
+.cropBookingPageImage {
+    width: 100%;
+    /*margin-left: -4.52%;*/
+    min-height: 399px;
+    max-height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.cropBookingPageImage img {
+    width: 100%;
+    min-height: 399px;
+    max-height: 400px;
+    /*margin: -100px 0 0 0px;*/
+
+}
+
+.scroll {
+    max-height: 600px;
+    overflow-y: auto;
+
+    border-radius: 5px;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#UserForm_Form_116_EditableTextField_e7de6{
+    width: 400px;
+}
+#UserForm_Form_116_EditableTextField_54d7e{
+    width: 400px;
+}
+#UserForm_Form_116_EditableTextField_8cc6b{
+    width: 400px;
+}
