@@ -1,0 +1,56 @@
+{
+  "name": "seaticks-platform",
+  "description": "description goes here",
+  "scripts": {
+    "gulp": "gulp",
+    "gulp scss": "gulp scss",
+    "webpack": "webpack --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://prabhashmj@bitbucket.org/prabhashmj/seaticks.git"
+  },
+  "author": "MJ",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "@silverstripe/webpack-config": "0.3.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "debounce": "^1.2.0",
+    "file-loader": "^2.0.0",
+    "karma": "^5.0.2",
+    "leaflet": "^1.3.4",
+    "moment": "2.24.0",
+    "postcss-cli": "^6.1.3",
+    "uc-scroll": "1.1.0",
+    "unfetch": "^4.0.1",
+    "v-runtime-template": "^1.6.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "fabric": "^3.6.3",
+    "jquery": "^3.4.1",
+    "jquery-contextmenu": "^3.0.0-beta.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "photo-sphere-viewer": "^3.6.0",
+    "popper.js": "^1.14.3",
+    "promise-polyfill": "8.1.3",
+    "smtpjs": "0.0.1",
+    "uevent": "^2.0.0"
+  }
+}
